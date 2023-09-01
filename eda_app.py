@@ -9,7 +9,6 @@ import seaborn as sns
 
 def run_eda_app():
 
-    st.subheader("탐색적 자료 분석 페이지")
+    st.subheader("EDA")
     st.subheader("잘 진행중임!")
-
-    
+    st.subheader("왜 안나오지")

@@ -10,7 +10,7 @@ def main():
     
     if choice == "Home":
         st.subheader("Home")
-    elif choice =="탐색적 자료 분석" :
+    elif choice =="EDA" :
         # st.subheader("탐색적 자료 분석")
         run_eda_app()
     elif choice =="머신러닝" :
