@@ -3,7 +3,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import matplotlib
+import matplotlib.pyplot as plt
 import seaborn as sns
 import sklearn
 import plotly
@@ -23,6 +23,6 @@ def main():
         st.subheader("About")
     else:
         pass
-    
+
 if __name__ == "__main__":
     main()
