@@ -5,7 +5,7 @@ from eda_app import run_eda_app
 
 def main():
     st.markdown("# Hello World")
-    menu = ["Home", "탐색적 자료 분석", "머신러닝", "About"]
+    menu = ["Home", "EDA", "머신러닝", "About"]
     choice = st.sidebar.selectbox("메뉴", menu)
     
     if choice == "Home":
