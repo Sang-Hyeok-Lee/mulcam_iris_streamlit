@@ -3,18 +3,26 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+import matplotlib
 import seaborn as sns
-import scikit_learn as sklearn
+import sklearn
 import plotly
 
 def main():
     st.markdown("# Hello World")
-    st.write(np.__version__)
-    st.write(pd.__version__)
-    st.write(plt.__version__)
-    st.write(sns.__version__)
-    st.write(sklearn.__version__)
-    st.write(plotly.__version__)
+    menu = ["Home", "탐색적 자료 분석", "머신러닝", "About"]
+    choice = st.sidebar.selectbox("메뉴", menu)
+    
+    if choice == "Home":
+        st.subheader("Home")
+    elif choice =="탐색적 자료 분석" :
+        st.subheader("탐색적 자료 분석")
+    elif choice =="머신러닝" :
+        st.subheader("머신러닝")
+    elif choice =="About" :
+        st.subheader("About")
+    else:
+        pass
+    
 if __name__ == "__main__":
     main()
